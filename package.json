@@ -1,0 +1,11 @@
+{
+  "name": "enjoy-foods",
+  "version": "1.0.0",
+  "description": "UI kit for food delivery web apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Tanryverdiev",
+  "license": "ISC"
+}
