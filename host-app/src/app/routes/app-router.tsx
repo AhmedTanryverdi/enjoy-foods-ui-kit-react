@@ -1,5 +1,5 @@
 import React, {Suspense} from "react";
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Outlet } from 'react-router-dom';
 import AppWrapper from "../ui/app-wrapper";
 
 // @ts-ignore
@@ -8,10 +8,13 @@ const AuthModule = React.lazy(() => import("auth/AuthModule"));
 export const appRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppWrapper />,
+        element: <AppWrapper>
+                <Outlet />
+            </AppWrapper>,
+        children: [],
     },
     {
-        path: "/auth",
+        path: "/auth/:action",
         element: (
             <Suspense fallback={<div>Загрузка аутентификации...</div>}>
                 <AuthModule />

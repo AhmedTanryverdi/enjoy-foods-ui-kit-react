@@ -1,10 +1,12 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React, {ReactNode} from "react";
+import Header from "../../feature/header/header";
 
-const AppWrapper: React.FC = ()=>{
-    return <div>
-        <p>Hello, App!</p>
-        <Link to={"/auth"}>go to auth!</Link>
+const styles = require("./styles.module.scss");
+
+const AppWrapper: React.FC<{children: ReactNode}> = ({children})=>{
+    return <div className={styles.app}>
+        <Header />
+        {children}
     </div>
 }
 
