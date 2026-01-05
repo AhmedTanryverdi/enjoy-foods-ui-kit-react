@@ -27,7 +27,7 @@
 			"auth-module/dist/types",
 			"payment-module/dist/types"
 		],
-		"types": ["node", "react", "react-dom"]
+		"types": ["node", "jest","react", "react-dom", "jest-dom", "testing-library__jest-dom"]
 	},
 	"include": [
 		"host-app/src/**/*",

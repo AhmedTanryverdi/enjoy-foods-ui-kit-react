@@ -6,6 +6,7 @@ import {Auth} from "./view/auth/auth";
 import {DropdownMenu} from "./view/dropdown-menu/dropdown-menu";
 
 const styles = require("./styles.module.scss");
+
 const AUTH_ITEMS = ["Login", "Sign up"];
 
 const Header: React.FC = ()=>{
@@ -13,7 +14,6 @@ const Header: React.FC = ()=>{
     const [activeIndex, setActiveIndex] = useState<number>(1);
     const [isActiveDropDown, setIsActiveDropdown] = useState<boolean>(false);
 
-    console.log("header")
     const handleClick = (e: React.MouseEvent<HTMLDivElement>)=>{
         if(e.target instanceof HTMLButtonElement){
             const index = e.target.getAttribute('data-index');
