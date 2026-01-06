@@ -1,15 +1,14 @@
 import React from "react";
+import {DROPDOWN_MENU} from "@/host-app/src/shared/utils/constants";
 
 const styles = require("./styles.module.scss");
-
-const MENU = ["Login", "Sign up", "Menu", "Blog", "Pricing", "Contact"];
 
 export const DropdownMenu: React.FC = ()=>{
 
     return <div className={styles.dropdown}>
         <ul className={styles.list}>
             {
-                MENU.map((item, index)=>{
+                DROPDOWN_MENU.map((item:string, index:number)=>{
                     return <li key={index} className={styles.list_item}>{item}</li>
                 })
             }

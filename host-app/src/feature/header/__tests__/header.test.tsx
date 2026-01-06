@@ -3,7 +3,7 @@ import {render, screen, fireEvent, waitFor } from "@testing-library/react";
 import {MemoryRouter} from "react-router-dom";
 import Header from "../header";
 import '@testing-library/jest-dom';
-import {Navbar} from "../view/navbar/navbar";
+import {Navbar} from "../../../shared/components/navbar/navbar";
 
 const styles = require("../styles.module.scss");
 
