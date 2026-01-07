@@ -10,7 +10,8 @@ const config: Config = {
     ],
     moduleNameMapper: {
         '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
-        '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js'
+        '\\.(jpg|jpeg|png|gif|svg)$': '<rootDir>/__mocks__/fileMock.js',
+        '^@/(.*)$': '<rootDir>/$1',
     },
     collectCoverage: true,
     coverageDirectory: 'coverage',

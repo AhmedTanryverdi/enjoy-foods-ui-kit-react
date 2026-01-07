@@ -64,13 +64,11 @@ test('Navbar items navigate on click', () => {
     expect(screen.getByText('Pricing')).toBeInTheDocument();
     expect(screen.getByText('Contact')).toBeInTheDocument();
 
-
     NAVBAR_ITEMS.forEach(item=>{
         const menuItem = screen.getByText(item);
-        expect(menuItem).toBeInTheDocument(); // Убедимся, что элемент есть
+        expect(menuItem).toBeInTheDocument();
         fireEvent.click(menuItem);
     })
-
 });
 
 
