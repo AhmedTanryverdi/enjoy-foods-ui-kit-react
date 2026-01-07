@@ -5,13 +5,23 @@ import {LINKS} from "@/host-app/src/shared/utils/constants";
 
 const styles = require("./styles.module.scss");
 
+
+const innerWidth = window.innerWidth;
+const navbarStyles = innerWidth <= 375 ? {
+    display: "flex",
+    flexDirection: "column",
+    rowGap: "30px",
+    marginTop: "53px",
+    fontSize: "14px"
+}: innerWidth <= 1024 ? {columnGap: "49px"}: {columnGap: "108px"}
+
 const Footer: React.FC = ()=>{
 
     return <footer className={styles.footer}>
         <div className={styles.content}>
             <Logo />
-            <div>
-                <Navbar styleProps={{columnGap: "108px"}}/>
+            <div className={styles.footerNavbarContainer}>
+                <Navbar styleProps={navbarStyles}/>
             </div>
         </div>
         <div className={styles.content}>
