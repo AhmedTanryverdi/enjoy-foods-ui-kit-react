@@ -3,7 +3,7 @@ import {render, screen, fireEvent, waitFor } from "@testing-library/react";
 import {MemoryRouter} from "react-router-dom";
 import Header from "../header";
 import '@testing-library/jest-dom';
-import {Navbar} from "../view/navbar/navbar";
+import {Navbar} from "../../../shared/components/navbar/navbar";
 
 const styles = require("../styles.module.scss");
 
@@ -64,13 +64,11 @@ test('Navbar items navigate on click', () => {
     expect(screen.getByText('Pricing')).toBeInTheDocument();
     expect(screen.getByText('Contact')).toBeInTheDocument();
 
-
     NAVBAR_ITEMS.forEach(item=>{
         const menuItem = screen.getByText(item);
-        expect(menuItem).toBeInTheDocument(); // Убедимся, что элемент есть
+        expect(menuItem).toBeInTheDocument();
         fireEvent.click(menuItem);
     })
-
 });
 
 

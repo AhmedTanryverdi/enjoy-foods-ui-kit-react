@@ -16,7 +16,7 @@
 		"jsx": "react-jsx",
 		"baseUrl": ".",
 		"paths": {
-			"@/*": ["src/*"],
+			"@/*": ["./*"],
 			// Добавляем пути к удалённым модулям
 			"auth/*": ["auth-module/src/*"],
 			"payment/*": ["payment-module/src/*"]
@@ -29,11 +29,7 @@
 		],
 		"types": ["node", "jest","react", "react-dom", "jest-dom", "testing-library__jest-dom"]
 	},
-	"include": [
-		"host-app/src/**/*",
-		"auth-module/src/**/*",
-		"payment-module/src/**/*"
-	],
+	"include": ["**/*"],
 	"exclude": ["node_modules", "dist"],
 	// Для монорепозитория (если модули в одной папке)
 	"references": [

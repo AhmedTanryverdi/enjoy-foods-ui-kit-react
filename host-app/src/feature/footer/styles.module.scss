@@ -1,0 +1,153 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  position: relative;
+
+  @media screen and (max-width: 375px){
+    max-width: 375px;
+    padding: 55px 30px;
+  }
+}
+
+
+.content{
+  max-width: 1238px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content:first-child{
+  padding-top: 96px;
+  padding-bottom: 29px;
+
+  img{
+    width: 150px;
+    height: 57px;
+  }
+
+  &:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #81818125;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: 1024px){
+    max-width: 880px;
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 20px;
+
+    img{
+      width: 107px;
+      height: 40px;
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #81818125;
+      bottom: -20px;
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    max-width: 375px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
+.content:last-child{
+  max-width: 1238px;
+  width: 100%;
+  padding: 57px 0 81px 0;
+
+  .copyright{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: #999999;
+  }
+
+  .list{
+    display: flex;
+    align-items: center;
+    column-gap: 54px;
+
+    li{
+      a{
+        text-decoration: none;
+        img{
+          width: 21px;
+          height: 21px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    max-width: 880px;
+    width: 100%;
+    padding: 40px 0 57px 0;
+
+    .copyright{
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    .list{
+      li{
+        a{
+          img{
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px){
+    max-width: 375px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    .copyright{
+      width: 100%;
+      position: absolute;
+      bottom: -27px;
+      text-align: center;
+      background-color: #eaeaea;
+      padding-bottom: 20px;
+    }
+
+    .social_links{
+      position: absolute;
+      top: 66px;
+      right: 30px;
+      z-index: 10;
+
+      .list{
+        column-gap: 20px;
+      }
+    }
+  }
+}

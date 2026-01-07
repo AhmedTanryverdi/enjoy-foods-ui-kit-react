@@ -1,13 +1,12 @@
 import React, {useState} from "react";
 import {useNavigate}  from "react-router-dom"
-import {Logo} from "./view/logo/logo";
-import {Navbar} from "./view/navbar/navbar";
+import {Logo} from "@/host-app/src/shared/components/logo/logo";
+import {Navbar} from "@/host-app/src/shared/components/navbar/navbar";
 import {Auth} from "./view/auth/auth";
 import {DropdownMenu} from "./view/dropdown-menu/dropdown-menu";
+import {AUTH_ITEMS} from "@/host-app/src/shared/utils/constants";
 
 const styles = require("./styles.module.scss");
-
-const AUTH_ITEMS = ["Login", "Sign up"];
 
 const Header: React.FC = ()=>{
     const navigate = useNavigate();
@@ -43,7 +42,6 @@ const Header: React.FC = ()=>{
                 }
             </div>
         </div>
-
     </header>
 }
 
