@@ -1,0 +1,253 @@
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 96px 85px;
+
+  @media screen and (max-width: 1024px){
+    padding: 84px 68px 91px;
+  }
+
+  @media screen and (max-width: 665px){
+    padding: 71px 40px 84px;
+  }
+
+  @media screen and (max-width: 600px){
+    flex-direction: column;
+    padding: 57px 21px 75px;
+    align-items: center;
+  }
+}
+
+.background_img{
+  max-width: 430px;
+  width: 100%;
+  height: 444px;
+
+  @media screen and (max-width: 1024px){
+    max-width: 305px;
+    height: 315px;
+  }
+
+  @media screen and (max-width: 600px){
+    max-width: 286px;
+    height: 256px;
+    margin-top: 70%;
+  }
+}
+
+.background{
+  position: relative;
+
+  .graph{
+    max-width: 207px;
+    width: 100%;
+    height: 205px;
+    position: absolute;
+    left: -20px;
+    bottom: -30px;
+  }
+
+  @media screen and (max-width: 1024px){
+    .graph{
+      max-width: 147px;
+      height: 146px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .graph{
+      max-width: 98px;
+      height: 97px;
+      left: 0;
+      bottom: 5px;
+    }
+  }
+}
+
+.primary_block{
+  max-width: 568px;
+  width: 100%;
+  max-height: 492px;
+
+  @media screen and (max-width: 1024px){
+    max-width: 403px;
+    height: 350px;
+  }
+
+  @media screen and (max-width: 665px){
+    max-width: 468px;
+    width: 100%;
+    max-height: 550px;
+  }
+
+  @media screen and (max-width: 600px){
+    max-width: 332px;
+    height: 177px;
+  }
+}
+
+.primary_up{
+  margin-left: 74px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  color: #201F1F33;
+  position: relative;
+
+  &:before{
+    content: '';
+    width: 54px;
+    height: 1px;
+    position: absolute;
+    left: -74px;
+    top: 50%;
+    background-color: #201F1F33;
+  }
+
+  @media screen and (max-width: 1024px){
+    font-size: 11px;
+  }
+
+  @media screen and (max-width: 600px){
+    font-size: 9px;
+    color: #201F1F;
+    text-align: center;
+
+    &:before{
+      content: '';
+      width: 54px;
+      height: 1px;
+      position: absolute;
+      left: -12px;
+      top: 50%;
+      background-color: #201F1F;
+    }
+  }
+}
+
+.title{
+  margin-top: 18px;
+  p{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 120%;
+    letter-spacing: -3px;
+    color: #201f1f;
+  }
+  span{
+    color: #5C4EAE;
+  }
+
+  @media screen and (max-width: 1024px){
+    margin-top: 12px;
+    p{
+      font-size: 53px;
+      letter-spacing: -2px;
+      line-height: 120%;
+    }
+  }
+
+  @media screen and (max-width: 665px){
+    p{
+      font-size: 46px;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    margin-top: 8px;
+    p{
+      font-size: 46px;
+      letter-spacing: -2px;
+      line-height: 120%;
+    }
+  }
+}
+
+.description{
+  margin-top: 16px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: justify;
+  color: #676767;
+  span{
+    color: #6155AE;
+  }
+
+  @media screen and (max-width: 1024px){
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 600px){
+    margin-top: 15px;
+    font-size: 11px;
+  }
+}
+
+.btns{
+  margin-top: 53px;
+  display: flex;
+  column-gap: 18px;
+
+  button{
+    cursor: pointer;
+    outline: none;
+
+    &:active{
+      transform: scale(0.95);
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    margin-top: 37px;
+    column-gap: 12px;
+  }
+
+  button:first-child{
+    padding: 18px 30px;
+    background-color: #6C5FBC;
+    border-radius: 12px;
+    border: none;
+
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16.27px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    color: #fff;
+
+    @media screen and (max-width: 1024px){
+      padding: 12px 21px;
+      font-size: 12px;
+    }
+  }
+
+  button:last-child{
+    padding: 18px 27px;
+    border-radius: 12px;
+    border: 1px solid #6C5FBC;
+    background-color: transparent;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16.27px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    color: #6C5FBC;
+
+    @media screen and (max-width: 1024px){
+      padding: 12px 19px;
+      font-size: 12px;
+    }
+  }
+}
