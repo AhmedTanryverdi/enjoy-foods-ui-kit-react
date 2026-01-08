@@ -1,0 +1,47 @@
+.background{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 11px;
+}
+
+.title{
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 43.2px;
+  line-height: 54px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+
+  @media screen and (max-width: 1024px){
+    font-size: 31px;
+    line-height: 38px;
+  }
+
+  @media screen and (max-width: 375px){
+    font-size: 43.2px;
+    line-height: 54px;
+  }
+}
+
+.subtitle{
+  font-family: Inter;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0;
+  color: #C5BFED;
+
+  @media screen and (max-width: 1024px){
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  @media screen and (max-width: 375px){
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

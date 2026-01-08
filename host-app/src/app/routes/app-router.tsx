@@ -8,9 +8,7 @@ const AuthModule = React.lazy(() => import("auth/AuthModule"));
 export const appRouter = createBrowserRouter([
     {
         path: "/",
-        element: <AppWrapper>
-                <Outlet />
-            </AppWrapper>,
+        element: <AppWrapper />,
         children: [],
     },
     {
