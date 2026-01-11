@@ -44,11 +44,11 @@
   column-gap: 9px;
 }
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 1024px){
   .background{
-    max-width: 1024px;
     padding-top: 34px;
   }
+
   .margin{
     max-width: 73px;
   }
@@ -69,7 +69,6 @@
 
 @media screen and (max-width: 600px){
   .background{
-    max-width: 600px;
     padding-top: 34px;
   }
   .margin{
@@ -79,7 +78,6 @@
 
 @media screen and (max-width: 450px) {
   .background {
-    max-width: 450px;
     padding-top: 34px;
   }
   .margin {
@@ -88,9 +86,6 @@
 }
 
 @media screen and (max-width: 375px){
-  .background{
-    max-width: 375px;
-  }
 
   .hamburger_menu{
     display: flex;
