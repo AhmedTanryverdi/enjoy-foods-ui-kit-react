@@ -1,0 +1,93 @@
+.top_dishes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  max-width: 1247px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 1024px){
+    max-width: 887px;
+    padding: 0 68px;
+  }
+}
+
+.title_block{
+  margin: 100px auto;
+
+  .title{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 25.56px;
+    letter-spacing: 0;
+    color: #323142;
+
+    span{
+      color: #6C5FBC;
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    .title{
+      font-size: 32px;
+    }
+  }
+}
+
+.btn_block{
+  align-self: flex-end;
+  margin-bottom: 120px;
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    span{
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 45.18px;
+      letter-spacing: -0.1px;
+      color: #ACADB9;
+    }
+
+    .svg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg:first-child{
+        position: relative;
+        left: 8px;
+      }
+    }
+
+    &:active{
+      scale: 0.95;
+    }
+  }
+}
+
+.card_list{
+  width: 100%;
+  margin-bottom: 65px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 41px;
+
+  @media screen and (max-width: 600px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

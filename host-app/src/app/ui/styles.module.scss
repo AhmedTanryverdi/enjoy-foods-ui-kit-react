@@ -26,6 +26,27 @@ body{
     font-weight: 700;
     font-style: italic;
   }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../../../public/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../../../public/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('../../../../public/assets/fonts/Poppins/Poppins-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
 }
 
 .app{

@@ -1,0 +1,125 @@
+.product_card{
+  max-width: 224px;
+  width: 100%;
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 35px;
+  border: 1px solid #F4F4F6;
+  box-shadow: 7px 82px 41px 0 #E5E5E5B2;
+  padding: 26px 0;
+  transition: 0.5s;
+  position: relative;
+
+  &:hover{
+    cursor: pointer;
+    transform: translateY(-25px);
+  }
+
+  @media screen and (max-width: 1024px){
+    max-width: 159px;
+    min-height: 277px;
+    border-radius: 25px;
+    padding: 21px 0;
+  }
+}
+
+.favorite{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  @media screen and (max-width: 1024px){
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.product_avatar{
+  max-width: 201px;
+  width: 100%;
+  height: 208px;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1024px){
+    max-width: 143px;
+    height: 148px;
+  }
+}
+.status{
+    display: inline-block;
+    margin-left: 16px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    align-self: flex-start;
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    @media screen and (max-width: 1024px){
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 8px;
+    }
+}
+
+.product_title{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 37px;
+  letter-spacing: 0;
+  color: #323142;
+  padding-left: 23px;
+
+  @media screen and (max-width: 1024px){
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 8px;
+  }
+}
+
+.product_price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 23px;
+  padding-right: 30px;
+
+  span{
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+
+  button{
+    padding: 12px 13px;
+    border: none;
+    outline: none;
+    background-color: #323142;
+    border-radius: 9px;
+  }
+
+  @media screen and (max-width: 1024px){
+    padding-left: 16px;
+
+    span{
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+    button{
+      padding: 9px 10px;
+      border-radius: 6px;
+    }
+  }
+}

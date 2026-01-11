@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "imgUrl": "foodImage.png",
+      "title": "Chicken Hell",
+      "price": "12.99",
+      "status": "Healthy",
+      "statusBgColor": "#F7EDD0",
+      "statusTextColor": "#DAA31A"
+    },
+    {
+      "imgUrl": "foodImage.png",
+      "title": "Swe Dish",
+      "price": "19.99",
+      "status": "Trending",
+      "statusBgColor": "#F7C5BA",
+      "statusTextColor": "#FB471D"
+    },
+    {
+      "imgUrl": "foodImage.png",
+      "title": "Chicken Hell",
+      "price": "12.99",
+      "status": "Supreme",
+      "statusBgColor": "#D6EEE0",
+      "statusTextColor": "#309D5B"
+    },
+    {
+      "imgUrl": "foodImage.png",
+      "title": "Swe Dish",
+      "price": "19.99",
+      "status": "Healthy",
+      "statusBgColor": "#F7EDD0",
+      "statusTextColor": "#DAA31A"
+    },
+    {
+      "imgUrl": "foodImage.png",
+      "title": "Chicken Hell",
+      "price": "12.99",
+      "status": "Trending",
+      "statusBgColor": "#F7C5BA",
+      "statusTextColor": "#FB471D"
+    }
+  ]
+}
