@@ -4,7 +4,7 @@ import {DownloadPromo} from "@/host-app/src/feature/main/download-promo/download
 import {TopDishes} from "@/host-app/src/feature/main/top-dishes/top-dishes";
 
 const Main: React.FC = ()=>{
-    return <main>
+    return <main style={{"width": "100%"}}>
         <Hero />
         <DownloadPromo />
         <TopDishes />

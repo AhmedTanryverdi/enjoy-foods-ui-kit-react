@@ -4,10 +4,6 @@ const styles = require("./styles.module.scss");
 
 export const DownloadPromo: React.FC = ()=>{
     return <section className={styles.download_promo}>
-        <div className={styles.background}>
-            <img src={require("@/host-app/src/shared/assets/images/download-promo/mobile.png")} alt="modile"/>
-        </div>
-        <div className={styles.margin}></div>
         <div className={styles.premium}>
             <h2 className={styles.title}>
                 <p>Premium <span>Quality</span></p>

@@ -7,7 +7,7 @@ const styles = require("./styles.module.scss");
 
 
 const innerWidth = window.innerWidth;
-const navbarStyles = innerWidth <= 375 ? {
+const navbarStyles = innerWidth <= 450 ? {
     display: "flex",
     flexDirection: "column",
     rowGap: "30px",
@@ -19,17 +19,17 @@ const Footer: React.FC = ()=>{
 
     return <footer className={styles.footer}>
         <div className={styles.content}>
-            <Logo />
-            <div className={styles.footerNavbarContainer}>
-                <Navbar styleProps={navbarStyles}/>
+            <div className={styles.up}>
+                <Logo />
+                <div className={styles.footerNavbarContainer}>
+                    <Navbar styleProps={navbarStyles}/>
+                </div>
             </div>
-        </div>
-        <div className={styles.content}>
-            <div className={styles.copyright}>
-                <span>© 2023 EATLY All Rights Reserved.</span>
-            </div>
-            <div className={styles.social_links}>
-                <ul className={styles.list}>
+            <div className={styles.down}>
+                <div className={styles.copyright}>
+                    <span>© 2023 EATLY All Rights Reserved.</span>
+                </div>
+                <ul className={styles.links}>
                     {
                         LINKS.map((item, index)=>{
                             return <li key={index}>

@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react";
+import React from "react";
 import Header from "../../feature/header/header";
 import Footer from "../../feature/footer/footer";
 import Main from "@/host-app/src/feature/main/main";

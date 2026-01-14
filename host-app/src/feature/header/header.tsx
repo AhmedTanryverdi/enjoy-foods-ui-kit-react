@@ -26,6 +26,7 @@ const Header: React.FC = ()=>{
             <Logo />
             <div className={styles.margin}></div>
             <Navbar />
+            <div style={{"flex": 1}}></div>
             <div className={styles.btns} onClick={(e: React.MouseEvent<HTMLDivElement>)=>handleClick(e)}>
                 {
                     AUTH_ITEMS.map((item, index)=>{
