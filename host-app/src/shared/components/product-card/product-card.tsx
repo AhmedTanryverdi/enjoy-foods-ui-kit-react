@@ -6,19 +6,14 @@ export const ProductCard: React.FC<{image: string,
     title: string,
     price: string,
     status: string,
-    statusBgColor: string,
-    statusTextColor: string
-}> = ({image, title, price, status, statusBgColor, statusTextColor})=>{
+}> = ({image, title, price, status})=>{
 
     return <div className={styles.product_card}>
         <div className={styles.product_avatar}>
             <img src={require(`@/public/assets/images/${image}`)} alt="image" />
         </div>
 
-        <div className={styles.status} style={{
-            backgroundColor: `${statusBgColor}`,
-            color: `${statusTextColor}`
-        }}>{status}</div>
+        <div className={styles.status} data-status={status}>{status}</div>
 
         <div className={styles.product_title}>
             <h2>{title}</h2>

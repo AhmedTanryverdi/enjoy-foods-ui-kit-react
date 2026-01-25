@@ -1,24 +1,21 @@
 import React, {useEffect, useState} from "react";
 import {ProductCard} from "@/host-app/src/shared/components/product-card/product-card";
+import Hero from "@/host-app/src/feature/main/hero/hero";
+import {DownloadPromo} from "@/host-app/src/feature/main/download-promo/download-promo";
 
 const styles = require("./styles.module.scss");
 
 export const TopDishes: React.FC = ()=>{
 
     const [productData, setProductData] = useState<any>([]);
-    useEffect(()=>{
-        const getData = async ()=>{
-            try {
-                const response = await fetch("http://localhost:8080/products");
-                if(!response.ok) throw new Error(`Ошибка запроса: ${response.status}`);
-                const data = await response.json();
-                setProductData(data);
 
-            }catch (err){
-                console.log("download products error!");
-            }
-        }
-        getData()
+    useEffect(() => {
+        fetch('http://localhost:5050')
+            .then(response=>response.json())
+            .then(data=>{
+                setProductData([...data]);
+            })
+            .catch(err=>console.log(err))
     }, []);
 
     if(!productData.length) return <div>Loading...</div>
@@ -32,12 +29,10 @@ export const TopDishes: React.FC = ()=>{
                 {
                     productData.map((item:any, index:number)=>{
                         return <ProductCard key={index}
-                                            image={item.imgUrl}
-                                            title={item.title}
+                                            image={item.image_url}
+                                            title={item.name}
                                             price={item.price}
                                             status={item.status}
-                                            statusBgColor={item.statusBgColor}
-                                            statusTextColor={item.statusTextColor}
                         />
                     })
                 }
